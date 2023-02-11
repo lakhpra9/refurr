@@ -1,0 +1,28 @@
+.header .header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #263c97;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    z-index: 11;
+    max-width: 100%;
+    margin: 0;
+    -webkit-transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    -moz-transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    -o-transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.header__info-2 {
+    justify-content: unset;
+}
+
+.side-menu .side-menu-btn {
+    padding-left: 20px;
+}
+
+.header__search {
+    margin-left: -190px;
+    width: 700px;
+}

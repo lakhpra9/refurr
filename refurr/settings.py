@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+__versionstr__ = '0.1'
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -117,6 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+
+# build version, it's increased with each build
+VERSION_STAMP = __versionstr__.replace(".", "")
+# rewrite static url to contain the number
+STATIC_URL = '%sversion%s/' % (STATIC_URL, VERSION_STAMP)
 
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [BASE_DIR / 'refurr/mystatic']

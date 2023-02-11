@@ -59,9 +59,10 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
                         <div class="header__info header__info-2">
                             <div class="logo logo-3">
-                                <a href="{% static 'index.html' %}" class="logo-image"><img src="{% static 'assets/img/logo/logo1.svg' %}" alt="logo" /></a>
+                                {% comment %} 'assets/refurr/logo/refurr.png' {% endcomment %}
+                                <a href="{% static 'index.html' %}" class="logo-image"><img src="{% static 'assets/refurr/logo/refurr.png' %}" alt="logo" /></a>
                             </div>
-                            <div class="side-menu mr-20">
+                            <div class="side-menu">
                                 <button type="button" class="side-menu-btn offcanvas-toggle-btn"><i class="fas fa-bars"></i></button>
                             </div>
                         </div>
@@ -171,7 +172,7 @@
             </div>
         </div>
     </div>
-    <div class="header__bottom d-none d-lg-block">
+    <div class="header__bottom d-none d-lg-block" id="header-sticky">
         <div class="container">
             <div class="box-items-inner pt-10 pb-10">
                 <div class="box-item">

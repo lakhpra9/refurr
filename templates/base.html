@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="{% static 'assets/css/font-awesome-pro.css' %}" />
         <link rel="stylesheet" href="{% static 'assets/css/default.css' %}" />
         <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/myCustom.css' %}" />
     </head>
 
     <body>
@@ -31,7 +32,7 @@
         <!--  -->
         {% include "_common/_header.html" %}
         <!--  -->
-        {% include "_common/_navbar.html" %}
+        {% comment %} {% include "_common/_navbar.html" %} {% endcomment %}
         <!--  -->
         {% block content %} {% endblock content %}
         <!--  -->
