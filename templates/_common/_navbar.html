@@ -1,0 +1,165 @@
+{% load static %}
+
+<!-- //side-menu -->
+<div class="main-menu">
+    <nav id="mobile-menu-2">
+        <ul>
+            <li>
+                <a href="{% static 'index.html' %}" class="active">Home <i class="far fa-angle-down"></i></a>
+                <ul class="megamenu-1">
+                    <li>
+                        <a href="{% static 'index.html' %}">Home Pages</a>
+                        <ul class="mega-item">
+                            <li><a href="{% static 'index.html' %}">Home One</a></li>
+                            <li><a href="{% static 'index-2.html' %}">Home Two</a></li>
+                            <li><a href="{% static 'index-3.html' %}" class="active">Home Three</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Shop 3 Column</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Shop 4 Column</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% static 'shop.html' %}">Product Pages</a>
+                        <ul class="mega-item">
+                            <li><a href="{% static 'product-details.html' %}">Product Details</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Product V2</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Product V3</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Varriable Product</a></li>
+                            <li><a href="{% static 'product-details.html' %}">External Product</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% static 'shop.html' %}">Other Pages</a>
+                        <ul class="mega-item">
+                            <li><a href="{% static 'product-details.html' %}">wishlist</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Shopping Cart</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Checkout</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Login</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Register</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% static 'shop.html' %}">Phone &amp; Tablets</a>
+                        <ul class="mega-item">
+                            <li><a href="{% static 'product-details.html' %}">Catagory 1</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Catagory 2</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Catagory 3</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Catagory 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% static 'shop.html' %}">Phone &amp; Tablets</a>
+                        <ul class="mega-item">
+                            <li><a href="{% static 'product-details.html' %}">Catagory 1</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Catagory 2</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Catagory 3</a></li>
+                            <li><a href="{% static 'product-details.html' %}">Catagory 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="{% static 'about.html' %}">About Us</a></li>
+            <li>
+                <a href="{% static 'shop.html' %}">Shop <i class="far fa-angle-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="{% static 'shop.html' %}">shop</a></li>
+                    <li><a href="{% static 'shop-details.html' %}">Shop Details</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="{% static 'blog.html' %}">Blog <i class="far fa-angle-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="{% static 'blog.html' %}">Blog</a></li>
+                    <li><a href="{% static 'blog-details.html' %}">Blog Details</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="{% static 'about.html' %}">Pages <i class="far fa-angle-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="{% static 'my-account.html' %}">My Account</a></li>
+                    <li><a href="{% static 'product-details.html' %}">Product Details</a></li>
+                    <li><a href="{% static 'faq.html' %}">FAQs pages</a></li>
+                    <li><a href="{% static 'cart.html' %}">Cart</a></li>
+                    <li><a href="{% static 'wishlist.html' %}">Wishlist</a></li>
+                    <li><a href="{% static 'checkout.html' %}">Checkout</a></li>
+                    <li><a href="{% static 'contact.html' %}">Contact Us</a></li>
+                    <li><a href="{% static '404.html' %}">404 Error</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- offcanvas area start -->
+<div class="offcanvas__area">
+    <div class="offcanvas__wrapper">
+        <div class="offcanvas__close">
+            <button class="offcanvas__close-btn" id="offcanvas__close-btn">
+                <i class="fal fa-times"></i>
+            </button>
+        </div>
+        <div class="offcanvas__content">
+            <div class="offcanvas__logo mb-40">
+                <a href="{% static 'index.html' %}">
+                    <img src="{% static 'assets/img/logo/logo-white.png' %}" alt="logo" />
+                </a>
+            </div>
+            <div class="offcanvas__search mb-25">
+                <form action="#">
+                    <input type="text" placeholder="What are you searching for?" />
+                    <button type="submit"><i class="far fa-search"></i></button>
+                </form>
+            </div>
+            <div class="sidebar__img mb-20">
+                <div class="row gx-2">
+                    <div class="col-4">
+                        <div class="sidebar__single-img hover-effect w-img mb-10">
+                            <a class="popup-image" href="{% static 'assets/img/gallery/gal-1.jpg' %}">
+                                <img src="{% static 'assets/img/gallery/gal-1.jpg' %}" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sidebar__single-img hover-effect w-img mb-10">
+                            <a class="popup-image" href="{% static 'assets/img/gallery/gal-2.jpg' %}">
+                                <img src="{% static 'assets/img/gallery/gal-2.jpg' %}" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sidebar__single-img hover-effect w-img mb-10">
+                            <a class="popup-image" href="{% static 'assets/img/gallery/gal-3.jpg' %}">
+                                <img src="{% static 'assets/img/gallery/gal-3.jpg' %}" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sidebar__single-img hover-effect w-img mb-10">
+                            <a class="popup-image" href="{% static 'assets/img/gallery/gal-4.jpg' %}">
+                                <img src="{% static 'assets/img/gallery/gal-4.jpg' %}" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sidebar__single-img hover-effect w-img mb-10">
+                            <a class="popup-image" href="{% static 'assets/img/gallery/gal-5.jpg' %}">
+                                <img src="{% static 'assets/img/gallery/gal-5.jpg' %}" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sidebar__single-img hover-effect w-img mb-10">
+                            <a class="popup-image" href="{% static 'assets/img/gallery/gal-6.jpg' %}">
+                                <img src="{% static 'assets/img/gallery/gal-6.jpg' %}" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-2"></div>
+            <div class="offcanvas__action"></div>
+        </div>
+    </div>
+</div>
+<!-- offcanvas area end -->
+<div class="body-overlay"></div>
+<!-- offcanvas area end -->
