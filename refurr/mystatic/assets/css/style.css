@@ -1071,6 +1071,12 @@ input {
     align-items: center;
 }
 
+.header__info-3 {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
 .header-top {
     border-bottom: 1px solid #e5e5e5;
     border-color: rgba(255, 255, 255, 0.1);
@@ -1232,7 +1238,7 @@ input {
 }
 
 .header__search {
-    margin-left: -30px;
+    margin-left: -100px;
     width: 630px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

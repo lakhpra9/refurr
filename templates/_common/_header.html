@@ -56,10 +56,9 @@
         <div class="container">
             <div class="heade-mid-inner">
                 <div class="row align-items-center">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
                         <div class="header__info header__info-2">
                             <div class="logo logo-3">
-                                {% comment %} 'assets/refurr/logo/refurr.png' {% endcomment %}
                                 <a href="{% static 'index.html' %}" class="logo-image"><img src="{% static 'assets/refurr/logo/refurr.png' %}" alt="logo" /></a>
                             </div>
                             <div class="side-menu">
@@ -67,7 +66,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-4 d-none d-lg-block">
+                    {% comment %} d-none d-lg-block {% endcomment %}
+                    <div class="col-xl-6 col-lg-4 header__info-3">
                         <div class="header__search">
                             <form action="#">
                                 <div class="header__search-box">
@@ -91,6 +91,9 @@
                                     </select>
                                 </div>
                             </form>
+                        </div>
+                        <div class="side-menu">
+                            <button type="button" class="side-menu-btn offcanvas-toggle-btn"><i class="fas fa-bars"></i></button>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5 col-md-8 col-sm-8">

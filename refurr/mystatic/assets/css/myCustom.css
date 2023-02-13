@@ -14,15 +14,23 @@
     transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.header__info-2 {
+/* .header__info-2 {
     justify-content: unset;
-}
+} */
 
 .side-menu .side-menu-btn {
-    padding-left: 20px;
+    padding-left: 10px;
+    /* position: relative;
+    left: -180px; */
 }
 
-.header__search {
+/* .header__search {
     margin-left: -190px;
     width: 700px;
-}
+} */
+
+/* 
+element.style {
+    position: relative;
+    left: -200px;
+     */
